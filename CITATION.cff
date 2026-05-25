@@ -1,0 +1,7 @@
+cff-version: 1.2.0
+message: "If you use WatchBench, please cite this repository."
+title: "WatchBench: Evaluating Intent-Defined Event Routing for Agents"
+version: "0.1.0"
+date-released: "2026-05-25"
+authors:
+  - name: "Harpinder"

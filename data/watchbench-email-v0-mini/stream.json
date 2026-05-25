@@ -1,0 +1,11 @@
+{
+  "stream_id": "email_stream_001",
+  "description": "Work inbox of a mid-level engineering manager at a B2B SaaS company. Receives a steady mix of internal team coordination, vendor and partner correspondence, customer escalations forwarded from support, recruiting pipeline updates, and routine operational noise like calendar invites, CI/CD alerts, and newsletter digests. Urgency spikes around sprint boundaries, quarterly planning, and whenever a production incident touches enterprise accounts. Most emails require a read-and-file or a short reply; a handful each week demand real action or escalation judgment.",
+  "user": {
+    "name": "Priya Nair",
+    "email": "priya.nair@crestline.io",
+    "role": "Engineering Manager, Platform Infrastructure",
+    "company": "Crestline (Series B SaaS, developer tooling)",
+    "timezone": "America/Chicago"
+  }
+}

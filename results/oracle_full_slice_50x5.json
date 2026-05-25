@@ -1,0 +1,177 @@
+{
+  "dataset": "watchbench-email-v0-full",
+  "event_count": 50,
+  "watch_count": 5,
+  "label_count": 250,
+  "poll_minutes": 60,
+  "runs": [
+    {
+      "candidate": "gold-oracle",
+      "metrics": {
+        "candidate": "gold-oracle",
+        "gold_positive_count": 19,
+        "wake_count": 19,
+        "unique_wake_count": 19,
+        "duplicate_wake_count": 0,
+        "true_positive": 19,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "false_wakeups_per_day": 0.0,
+        "latency_seconds_p50": 0.0,
+        "latency_seconds_p95": 0.0,
+        "latency_seconds_max": 0.0,
+        "cost": {
+          "source_list_calls": 0,
+          "source_search_calls": 0,
+          "source_get_calls": 0,
+          "source_calls_total": 0,
+          "source_metadata_returned": 0,
+          "source_bodies_returned": 0,
+          "llm_calls": 0,
+          "llm_input_tokens": 0,
+          "llm_output_tokens": 0,
+          "llm_tokens_total": 0,
+          "notes": []
+        }
+      },
+      "wakes": [
+        {
+          "candidate": "gold-oracle",
+          "watch_id": "watch_004",
+          "event_id": "email_0002",
+          "wake_time": "2026-03-02T08:31:00-06:00",
+          "reason": "Email mentions Sprint 34 Planning, includes a date (March 5), a calendar invite attachment, and a request to confirm attendance."
+        },
+        {
+          "candidate": "gold-oracle",
+          "watch_id": "watch_002",
+          "event_id": "email_0005",
+          "wake_time": "2026-03-02T10:47:00-06:00",
+          "reason": "Email is from recruiting@loopstack.io and is about a candidate declining an offer, which matches the watch intent."
+        },
+        {
+          "candidate": "gold-oracle",
+          "watch_id": "watch_001",
+          "event_id": "email_0010",
+          "wake_time": "2026-03-02T16:44:00-06:00",
+          "reason": "Sender is from @loopstack.io and the subject and body contain both 'P1' and 'degraded', matching the watch intent."
+        },
+        {
+          "candidate": "gold-oracle",
+          "watch_id": "watch_001",
+          "event_id": "email_0011",
+          "wake_time": "2026-03-02T17:05:00-06:00",
+          "reason": "Sender is from @loopstack.io and the subject/body contain 'P1', 'degraded', and 'incident'."
+        },
+        {
+          "candidate": "gold-oracle",
+          "watch_id": "watch_003",
+          "event_id": "email_0014",
+          "wake_time": "2026-03-03T08:15:00-06:00",
+          "reason": "Sender is external (cloudflare.com) and the subject explicitly mentions 'renewal' in the context of a subscription requiring a decision."
+        },
+        {
+          "candidate": "gold-oracle",
+          "watch_id": "watch_001",
+          "event_id": "email_0015",
+          "wake_time": "2026-03-03T09:02:00-06:00",
+          "reason": "Sender is from @loopstack.io and the subject/body mention 'outage', 'degradation', and 'incident'."
+        },
+        {
+          "candidate": "gold-oracle",
+          "watch_id": "watch_005",
+          "event_id": "email_0018",
+          "wake_time": "2026-03-03T11:18:00-06:00",
+          "reason": "Sender is external (nexacloud.io) and explicitly discloses a security vulnerability (SSRF) in Loopstack's platform infrastructure."
+        },
+        {
+          "candidate": "gold-oracle",
+          "watch_id": "watch_002",
+          "event_id": "email_0019",
+          "wake_time": "2026-03-03T13:05:00-06:00",
+          "reason": "Sender is recruiting@loopstack.io, an explicitly listed qualifying address, and the email is about a candidate moving to offer stage."
+        },
+        {
+          "candidate": "gold-oracle",
+          "watch_id": "watch_004",
+          "event_id": "email_0020",
+          "wake_time": "2026-03-03T14:47:00-06:00",
+          "reason": "Email mentions a Sprint Retrospective by name, includes a specific date (March 19), a calendar invite attachment, and a request to confirm attendance."
+        },
+        {
+          "candidate": "gold-oracle",
+          "watch_id": "watch_003",
+          "event_id": "email_0024",
+          "wake_time": "2026-03-03T17:10:00-06:00",
+          "reason": "External sender from stratadeploy.com explicitly mentions a draft SOW and co-sell terms requiring review and decision."
+        },
+        {
+          "candidate": "gold-oracle",
+          "watch_id": "watch_001",
+          "event_id": "email_0028",
+          "wake_time": "2026-03-04T13:20:00-06:00",
+          "reason": "Sender is from @loopstack.io and the email mentions the staging environment is 'unavailable', matching the watch's domain and keyword criteria."
+        },
+        {
+          "candidate": "gold-oracle",
+          "watch_id": "watch_002",
+          "event_id": "email_0032",
+          "wake_time": "2026-03-04T17:03:00-06:00",
+          "reason": "Sender is recruiting@loopstack.io and the email is about a candidate accepting an offer, which matches the watch intent."
+        },
+        {
+          "candidate": "gold-oracle",
+          "watch_id": "watch_001",
+          "event_id": "email_0033",
+          "wake_time": "2026-03-05T08:12:00-06:00",
+          "reason": "Sender is @loopstack.io and the body contains the word \"outage\" (referring to the INC-4421 ingestion pipeline outage), satisfying the domain and keyword conditions of the watch."
+        },
+        {
+          "candidate": "gold-oracle",
+          "watch_id": "watch_001",
+          "event_id": "email_0036",
+          "wake_time": "2026-03-05T11:58:00-06:00",
+          "reason": "Sender is @loopstack.io and the subject and body contain 'P0', 'down', and 'incident', matching the watch intent."
+        },
+        {
+          "candidate": "gold-oracle",
+          "watch_id": "watch_004",
+          "event_id": "email_0039",
+          "wake_time": "2026-03-05T15:30:00-06:00",
+          "reason": "Email explicitly schedules a Sprint 34 Review on March 18 and includes a Zoom meeting link, satisfying the sprint review ceremony with a date and calendar/meeting link."
+        },
+        {
+          "candidate": "gold-oracle",
+          "watch_id": "watch_004",
+          "event_id": "email_0044",
+          "wake_time": "2026-03-06T10:15:00-06:00",
+          "reason": "Email explicitly mentions Sprint 35 Planning, includes a date (March 23), a Zoom link as a calendar/meeting link, and requests attendance confirmation."
+        },
+        {
+          "candidate": "gold-oracle",
+          "watch_id": "watch_003",
+          "event_id": "email_0045",
+          "wake_time": "2026-03-06T11:22:00-06:00",
+          "reason": "External sender (sentry.io) and the email explicitly mentions an upcoming auto-renewal requiring potential action."
+        },
+        {
+          "candidate": "gold-oracle",
+          "watch_id": "watch_001",
+          "event_id": "email_0046",
+          "wake_time": "2026-03-06T13:04:00-06:00",
+          "reason": "Sender is @loopstack.io and the subject contains 'P0', 'downtime', and 'incident' keywords matching the watch intent."
+        },
+        {
+          "candidate": "gold-oracle",
+          "watch_id": "watch_002",
+          "event_id": "email_0050",
+          "wake_time": "2026-03-06T17:18:00-06:00",
+          "reason": "Sender is recruiting@loopstack.io, a qualifying address, and the email reports a candidate withdrawing from the hiring pipeline."
+        }
+      ]
+    }
+  ]
+}

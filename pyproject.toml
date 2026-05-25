@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "watchbench"
+version = "0.1.0"
+description = "Email event-routing benchmark for downstream agent wakeups."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "Harpinder" }]
+dependencies = []
+
+[project.scripts]
+watchbench-evaluate = "watchbench.cli.evaluate:main"
+watchbench-export-hf = "watchbench.cli.export_hf_dataset:main"
+
+[tool.setuptools]
+packages = ["watchbench", "watchbench.adapters", "watchbench.cli"]
+
+[tool.setuptools.package-data]
+watchbench = ["prompt_templates/README.md", "prompt_templates/eval/*.md"]

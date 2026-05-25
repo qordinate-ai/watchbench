@@ -1,0 +1,173 @@
+{
+  "dataset": "watchbench-email-v0-full",
+  "event_count": 50,
+  "watch_count": 5,
+  "label_count": 250,
+  "poll_minutes": 60,
+  "runs": [
+    {
+      "candidate": "openclaw-parallel-polling-agent",
+      "metrics": {
+        "candidate": "openclaw-parallel-polling-agent",
+        "gold_positive_count": 19,
+        "wake_count": 18,
+        "unique_wake_count": 18,
+        "duplicate_wake_count": 0,
+        "true_positive": 18,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 1.0,
+        "recall": 0.9473684210526315,
+        "f1": 0.972972972972973,
+        "false_wakeups_per_day": 0.0,
+        "latency_seconds_p50": 1770.0,
+        "latency_seconds_p95": 3300.0,
+        "latency_seconds_max": 3420.0,
+        "cost": {
+          "source_list_calls": 107,
+          "source_search_calls": 0,
+          "source_get_calls": 50,
+          "source_calls_total": 157,
+          "source_metadata_returned": 50,
+          "source_bodies_returned": 50,
+          "llm_calls": 42,
+          "llm_input_tokens": 505386,
+          "llm_output_tokens": 3197,
+          "llm_tokens_total": 508583,
+          "notes": [
+            "openclaw_session_id=watchbench-openclaw-parallel-50x5",
+            "openclaw_parallel_workers=8"
+          ]
+        }
+      },
+      "wakes": [
+        {
+          "candidate": "openclaw-parallel-polling-agent",
+          "watch_id": "watch_002",
+          "event_id": "email_0005",
+          "wake_time": "2026-03-02T11:07:00-06:00",
+          "reason": "Email is from recruiting@loopstack.io and says a candidate declined an offer."
+        },
+        {
+          "candidate": "openclaw-parallel-polling-agent",
+          "watch_id": "watch_004",
+          "event_id": "email_0002",
+          "wake_time": "2026-03-02T09:07:00-06:00",
+          "reason": "Email mentions Sprint 34 Planning, includes a scheduled date/time, attached calendar invite, and asks Priya to confirm attendance."
+        },
+        {
+          "candidate": "openclaw-parallel-polling-agent",
+          "watch_id": "watch_003",
+          "event_id": "email_0014",
+          "wake_time": "2026-03-03T09:07:00-06:00",
+          "reason": "External vendor email mentions a Cloudflare subscription renewal and requires billing action."
+        },
+        {
+          "candidate": "openclaw-parallel-polling-agent",
+          "watch_id": "watch_001",
+          "event_id": "email_0015",
+          "wake_time": "2026-03-03T09:07:00-06:00",
+          "reason": "Loopstack sender mentions incident, outage, and degradation in the subject/body."
+        },
+        {
+          "candidate": "openclaw-parallel-polling-agent",
+          "watch_id": "watch_005",
+          "event_id": "email_0018",
+          "wake_time": "2026-03-03T12:07:00-06:00",
+          "reason": "External security researcher reports a potential SSRF vulnerability in Loopstack's platform/webhook handler."
+        },
+        {
+          "candidate": "openclaw-parallel-polling-agent",
+          "watch_id": "watch_002",
+          "event_id": "email_0019",
+          "wake_time": "2026-03-03T13:07:00-06:00",
+          "reason": "Email is from recruiting@loopstack.io and says the candidate is moving to offer stage."
+        },
+        {
+          "candidate": "openclaw-parallel-polling-agent",
+          "watch_id": "watch_004",
+          "event_id": "email_0020",
+          "wake_time": "2026-03-03T15:07:00-06:00",
+          "reason": "Email mentions a sprint retrospective, includes a scheduled date/time, and asks recipients to confirm attendance."
+        },
+        {
+          "candidate": "openclaw-parallel-polling-agent",
+          "watch_id": "watch_001",
+          "event_id": "email_0010",
+          "wake_time": "2026-03-02T17:07:00-06:00",
+          "reason": "Sender is at loopstack.io and subject/body explicitly mention P1 incident and degraded service."
+        },
+        {
+          "candidate": "openclaw-parallel-polling-agent",
+          "watch_id": "watch_001",
+          "event_id": "email_0011",
+          "wake_time": "2026-03-02T17:07:00-06:00",
+          "reason": "Sender is at loopstack.io and follow-up subject/body explicitly mention P1 incident and prolonged degradation."
+        },
+        {
+          "candidate": "openclaw-parallel-polling-agent",
+          "watch_id": "watch_003",
+          "event_id": "email_0024",
+          "wake_time": "2026-03-03T18:07:00-06:00",
+          "reason": "External sender mentions a draft SOW for Loopstack partnership requiring review."
+        },
+        {
+          "candidate": "openclaw-parallel-polling-agent",
+          "watch_id": "watch_001",
+          "event_id": "email_0033",
+          "wake_time": "2026-03-05T09:07:00-06:00",
+          "reason": "Internal Loopstack email mentions INC-4421 and an ingestion pipeline outage."
+        },
+        {
+          "candidate": "openclaw-parallel-polling-agent",
+          "watch_id": "watch_001",
+          "event_id": "email_0036",
+          "wake_time": "2026-03-05T12:07:00-06:00",
+          "reason": "Email is from @loopstack.io and explicitly mentions a P0 incident, service down, unavailable customers, and 100% error rate."
+        },
+        {
+          "candidate": "openclaw-parallel-polling-agent",
+          "watch_id": "watch_002",
+          "event_id": "email_0032",
+          "wake_time": "2026-03-04T17:07:00-06:00",
+          "reason": "From recruiting@loopstack.io and says the candidate offer was accepted."
+        },
+        {
+          "candidate": "openclaw-parallel-polling-agent",
+          "watch_id": "watch_004",
+          "event_id": "email_0039",
+          "wake_time": "2026-03-05T16:07:00-06:00",
+          "reason": "Subject/body mention sprint review with a date, Zoom link, and attendance/availability request."
+        },
+        {
+          "candidate": "openclaw-parallel-polling-agent",
+          "watch_id": "watch_004",
+          "event_id": "email_0044",
+          "wake_time": "2026-03-06T11:07:00-06:00",
+          "reason": "Email mentions sprint planning, includes a date/time, calendar invite context, Zoom link, and asks to confirm attendance."
+        },
+        {
+          "candidate": "openclaw-parallel-polling-agent",
+          "watch_id": "watch_003",
+          "event_id": "email_0045",
+          "wake_time": "2026-03-06T12:07:00-06:00",
+          "reason": "External vendor email explicitly mentions auto-renewal and renewal amount for Loopstack subscription."
+        },
+        {
+          "candidate": "openclaw-parallel-polling-agent",
+          "watch_id": "watch_002",
+          "event_id": "email_0050",
+          "wake_time": "2026-03-06T18:07:00-06:00",
+          "reason": "Email from recruiting@loopstack.io says the candidate withdrew from the hiring pipeline after accepting another offer."
+        },
+        {
+          "candidate": "openclaw-parallel-polling-agent",
+          "watch_id": "watch_001",
+          "event_id": "email_0046",
+          "wake_time": "2026-03-06T13:07:00-06:00",
+          "reason": "Email is from loopstack.io and mentions P0, restored service, downtime, and incident INC-4435."
+        }
+      ]
+    }
+  ]
+}
